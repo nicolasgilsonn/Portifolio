@@ -66,7 +66,7 @@ header h2 {
 }
 
 #secao-projetos {
-    background-color: #272935;
+    background-color: #000000;
     height: 100vh;
 }
 
@@ -99,16 +99,27 @@ header h2 {
 
 .card-text {
     position: absolute;
-    top: 30%;
+    top: 0%;
     opacity: 0;
     transition: opacity .5s, top .5s;
 }
 
 .card:hover .card-text {
     opacity: 1;
-    top: 15%;
+    top: 30%;
 }
 
 .card:hover .image-wrapper{
-    opacity: .3;
+    opacity: .30;
+}
+
+
+.card-text h2 {
+    font-size: 2rem;
+    color:rgb(255, 255, 255)
+}
+
+.card-text p {
+    font-size: 1.2rem;
+    color:antiquewhite
 }
