@@ -18,6 +18,7 @@ header
 {
     height: 800px;
 }
+
 header::before{
     content: "";
     background-image: url("../images/header.png");
@@ -27,6 +28,8 @@ header::before{
     display: block;
     position: absolute;
     z-index: -10;
+    top: 0;
+    left:0;
 }
 
 header h1 {
@@ -34,6 +37,8 @@ header h1 {
     font-size: 56px;
     font-weight: 800;
     font-family: "Montserrat", sans-serif;
+    margin-left: 10%;
+    margin-top: 10%;
 }
 
 header h2 {
@@ -41,12 +46,15 @@ header h2 {
     font-size: 32px;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
+    margin-left: 15%;
+    
 }
 #secao-apresentacao {
     display: flex;
     padding: 4rem;
     align-items: center;
 /* 1rem = 16px*/
+    
 }
 #secao-apresentacao img{
     border-radius: 100%;
@@ -99,14 +107,14 @@ header h2 {
 
 .card-text {
     position: absolute;
-    top: 0%;
+    top: 30%;
     opacity: 0;
     transition: opacity .5s, top .5s;
 }
 
 .card:hover .card-text {
     opacity: 1;
-    top: 30%;
+    top: 10%;
 }
 
 .card:hover .image-wrapper{
@@ -122,4 +130,36 @@ header h2 {
 .card-text p {
     font-size: 1.2rem;
     color:antiquewhite
+}
+
+#secao-orcamento {
+    height: 100vh;
+    padding: 3rem;
+}
+
+#secao-orcamento h2 {
+    font-family: var(--font-title);
+}
+
+#secao-orcamento form{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.linha {
+    grid-column: 1/3;
+}
+
+input[type=radio],
+input[type=checkbox],
+input[type=range] {
+    accent-color: var(--color-destak);
 }
