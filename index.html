@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Nicolas</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -60,44 +61,50 @@
     </section>
      
     <section id="secao-orcamento">
-        <h2>Faça um orçamento</h2>
+        <h2>Sua preferência de computador</h2>
         <form action="">
             <div class="campo linha">
-                <label for="nome">Nome</label>
-                <input type="password" id="nome">
-            </div>
-            <div class="campo">
-                <label for="paginas">Qtd de páginas</label>
-                <input type="number" id="paginas" min="1">
-            </div>
-            <div class="campo">
-                <label for="tipo">Tipo de site</label>
+                <label for="tipo">Prefere qual tipo?</label>
                 <select id="tipo">
-                    <option value="1" selected>estático</option>
-                    <option value="2">dinâmico</option>
+                    <option value=""></option>
+                    <option value="1">Notebook</option>
+                    <option value="2">CPU</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="memoria">Quantidade de memória RAM</label>
+                <select id="memoria">
+                    <option value="" selected></option>
+                    <option value="1">8GB</option>
+                    <option value="2">16GB</option>
+                    <option value="3">32GB</option>
+                    <option value="4">64GB</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="marca">Marca de processador</label>
+                <select id="marca">
+                    <option value="1" selected>Intel</option>
+                    <option value="2">AMD</option>
                 </select>
             </div>
 
             <div class="campo">
-                <label for="">precisa de protótipo?</label>
+                <label for="">Precisa de placa de video?</label>
                 <div>
                     <input type="radio" name="prototipo" id="prototipo_sim">
-                    <label for="prototipo_sim">sim, preciso</label>
+                    <label for="prototipo_sim">Sim, preciso.</label>
                     <input type="radio" name="prototipo" id="prototipo_nao">
-                    <label for="prototipo_nao">não, já tenho</label>
+                    <label for="prototipo_nao">Não, pois o processador é embutido.</label>
                 </div>
             </div>
+            
+            <label for="prazo">Iria atender em quanto suas expectativas?</label>
+            <input type="range" min="1" max="12" id="prazo">
 
-            <div class="campo">
-                <input type="checkbox" id="js">
-                <label for="js">tem automação com JS</label>
+            
 
-            </div>
-            <div class="campo">
-                <label for="prazo">prazo</label>
-                <input type="range" min="1" max="12" id="prazo">
-
-            </div>
+            <output id="valor">R$ 0</output>
 
 
         </form>

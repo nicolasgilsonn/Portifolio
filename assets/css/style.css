@@ -16,7 +16,8 @@
 }
 header 
 {
-    height: 800px;
+    height: 100vh;
+    margin-bottom: -9%;
 }
 
 header::before{
@@ -54,6 +55,7 @@ header h2 {
     padding: 4rem;
     align-items: center;
 /* 1rem = 16px*/
+    background-color:#aaadcf;
     
 }
 #secao-apresentacao img{
@@ -145,7 +147,7 @@ header h2 {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
-    max-width: 250px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
