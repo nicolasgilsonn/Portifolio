@@ -38,8 +38,9 @@ header h1 {
     font-size: 56px;
     font-weight: 800;
     font-family: "Montserrat", sans-serif;
-    margin-left: 10%;
-    margin-top: 10%;
+    display: block;
+    margin-left: 100px;
+    margin-top: -15px;
 }
 
 header h2 {
@@ -47,15 +48,16 @@ header h2 {
     font-size: 32px;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
-    margin-left: 15%;
+    margin-left: 15px;
     
 }
 #secao-apresentacao {
-    display: flex;
-    padding: 4rem;
-    align-items: center;
+    display: grid;
+    gap: 2rem;
+    padding: 3rem;
+
 /* 1rem = 16px*/
-    background-color:#aaadcf;
+    background-color:#1e1f27;
     
 }
 #secao-apresentacao img{
@@ -63,21 +65,21 @@ header h2 {
 }
 
 #texto-apresentacao h2 {
-    color: var(--color-destak);
+    color: var(--color-subtitle);
     font-size: 2.5rem;
     font-family: var(--font-title);
 
 }
 
 #texto-apresentacao p {
-    color: var(--color-other1);
+    color: rgb(202, 212, 196);
     font-size: 1.5rem;
     font-family: var(--font-body);
 }
 
 #secao-projetos {
-    background-color: #000000;
-    height: 100vh;
+    background-color: #1e1f27;
+    height: 420px;
 }
 
 #secao-projetos ul{
@@ -126,7 +128,7 @@ header h2 {
 
 .card-text h2 {
     font-size: 2rem;
-    color:rgb(255, 255, 255)
+    color:#ffffff
 }
 
 .card-text p {
@@ -135,33 +137,59 @@ header h2 {
 }
 
 #secao-orcamento {
-    height: 100vh;
-    padding: 3rem;
+    height: 150px;
+    padding: 4rem;
+    background-color:#1e1f27;
 }
 
 #secao-orcamento h2 {
     font-family: var(--font-title);
+    color: #FFFFFF;
+    font-size: 30px;
 }
 
 #secao-orcamento form{
     display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 900px;
+    gap: 3rem;
+    grid-template-columns: repeat(6, 1fr);
+    max-width: 1500px;
     margin: 0 auto;
 }
 
 .campo {
     display: flex;
     flex-direction: column;
+    font-size: 20px;
+    color: #FFFFFF
+    
 }
 
 .linha {
     grid-column: 1/3;
+    font-size: 20px;
+    color: #FFFFFF
+}
+.linha select{
+    height: 25px;
+    width: 100px;
+}
+input[type=radio] {
+    accent-color: var(--color-destak);
+    width: 50px;
+    height: 20px;
+
 }
 
-input[type=radio],
-input[type=checkbox],
-input[type=range] {
-    accent-color: var(--color-destak);
+.campo select {
+    height: 30px;
+    width: 100px;
 }
+
+#valor {
+    font-size: 25px;
+    color: #3cff00;
+}
+
+
+
+

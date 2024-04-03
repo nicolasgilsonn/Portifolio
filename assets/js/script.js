@@ -1,6 +1,7 @@
 document.querySelector("#memoria").addEventListener("change", calcular)
 document.querySelector("#tipo").addEventListener("change", calcular)
 document.querySelector("#prototipo_sim").addEventListener("change", calcular)
+document.querySelector("#prototipo_nao").addEventListener("change", calcular)
 document.querySelector("#prazo").addEventListener("input", function(){
     const pazo = document.querySelector("#prazo").value
     document.querySelector("label[for=prazo]").innerText = "Prazo: " + prazo
