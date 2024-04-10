@@ -57,7 +57,7 @@ header h2 {
     padding: 3rem;
 
 /* 1rem = 16px*/
-    background-color:#1e1f27;
+    background-color:#06010a;
     
 }
 #secao-apresentacao img{
@@ -78,7 +78,7 @@ header h2 {
 }
 
 #secao-projetos {
-    background-color: #1e1f27;
+    background-color: #06010a;
     height: 420px;
 }
 
@@ -139,7 +139,7 @@ header h2 {
 #secao-orcamento {
     height: 150px;
     padding: 4rem;
-    background-color:#1e1f27;
+    background-color:#06010a;
 }
 
 #secao-orcamento h2 {
